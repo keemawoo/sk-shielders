@@ -1,0 +1,16 @@
+CTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxinum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <script>
+            alert("비밀번호는 대소문자, 특수문자 포함 8자 이상 입력해주세요.")
+            document.location.href="regist";
+        </script>
+    </head>
+    
+<body></body>
+</html>
+

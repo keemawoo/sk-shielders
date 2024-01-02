@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maxinum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+		
+		<title>Post Board Of All</title>
+	</head>
+    <body>	
+		<div class="view" style="background-color:#3c3c3c">
+			<div class="row h-100">
+				<div class="col-sm-12 my-auto white-text text-center">
+					<div class="container">
+					{% if logininfo %}
+					<h5 style="text-shadow: 2px 2px black;"><font color="white" size=5> <strong>{{logininfo}}</strong>님 환영합니다.</font></h5>
+					{% endif %}
+					<hr style="border: solid 2px rgb(255, 255, 255); width:700px; margin-bottom: -12px">
+						<a class="display-2 text-white font-weight-bold"
+						style="text-shadow:0 5px black,5px 0 black;">새해 다짐 게시판 <br><font size=12> - 다짐해용 - </font></br> </a>
+					
+					<hr style="border: solid 2px rgb(255, 255, 255); width:700px; margin-top:0px">
+					{% if logininfo %}
+					<a href="/post" style="text-shadow:2px 2px black;"><font color="white" size=6><strong>게시판&nbsp;</strong></font></a> <font color="white" size=6>&middot;&nbsp;</font>
+					<a href="/logout" style="text-shadow: 2px 2px black;"><font color="white" size=6><strong>로그아웃</strong></font></a>
+					{% else %}   
+					<a href="/login" style="text-shadow: 2px 2px black;"><font color="white" size=6><strong>로그인&nbsp;</strong></font></a> <font color="white" size=6>&middot;&nbsp;</font>
+					<a href="/regist" style="text-shadow: 2px 2px black;"><font color="white" size=6><strong>회원가입</strong></font></a>
+					{% endif %}
+				</div>
+				</div>
+			</div>
+    </body>
+</html>
